@@ -8,7 +8,6 @@ const WorkoutForm = () => {
   const [title, setTitle] = useState("");
   const [load, setLoad] = useState("");
   const [reps, setReps] = useState("");
-  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,14 +23,10 @@ const WorkoutForm = () => {
     });
     const json = await response.json();
 
-    if (!response.ok) {
-      setError(json.error);
-    }
     if (response.ok) {
       setTitle("");
       setLoad("");
       setReps("");
-      setError(null);
       console.log("new workout added" + JSON);
       dispatch({type: 'CREATE_WORKOUTS', payload: json})
     }
@@ -62,7 +57,6 @@ const WorkoutForm = () => {
         value={reps}
       />
       <button>Add Workout</button>
-      {/* {error & <div className="error">{error}</div>} */}
     </form>
   );
 };
