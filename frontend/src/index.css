@@ -128,3 +128,119 @@ form.signup, form.login {
   background: #fff;
   border-radius: 4px;
 }
+
+
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+  border-top: 0;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f8f9fc;
+  border-bottom: 1px solid #e3e6f0;
+}
+.card-header:first-child {
+  border-radius: calc(0.35rem - 1px) calc(0.35rem - 1px) 0 0;
+}
+.card-header-tabs {
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0;
+}
+.card-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+.card-group > .card:not(:last-child) .card-header,
+.card-group > .card:not(:last-child) .card-img-top {
+  border-top-right-radius: 0;
+}
+.card-group > .card:not(:first-child) .card-header,
+.card-group > .card:not(:first-child) .card-img-top {
+  border-top-left-radius: 0;
+}
+.accordion > .card > .card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dddfeb !important;
+}
+.table-bordered {
+  border: 1px solid #e3e6f0;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #e3e6f0;
+}
+.table-bordered thead td,
+.table-bordered thead th {
+  border-bottom-width: 2px;
+}
+.table-dark.table-bordered {
+  border: 0;
+}
+.table-responsive > .table-bordered {
+  border: 0;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e3e6f0;
+}
+table {
+  border-collapse: collapse;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #858796;
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #e3e6f0;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e3e6f0;
+}
+.table tbody + tbody {
+  border-top: 2px solid #e3e6f0;
+}
+.table-sm td,
+.table-sm th {
+  padding: 0.3rem;
+}
+.table-bordered {
+  border: 1px solid #e3e6f0;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #e3e6f0;
+}
+.table-bordered thead td,
+.table-bordered thead th {
+  border-bottom-width: 2px;
+}
+.table-borderless tbody + tbody,
+.table-borderless td,
+.table-borderless th,
+.table-borderless thead th {
+  border: 0;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.table-hover tbody tr:hover {
+  color: #858796;
+  background-color: rgba(0, 0, 0, 0.075);
+}
